@@ -32,7 +32,7 @@ static const uint8_t SCK = 18;
 #define BTN_ACT LOW
 
 #define RXLED 4
-#define TXLED 5
+#define LED 5
 #define LED_ON HIGH
 #define LED_OFF LOW
 
@@ -65,16 +65,16 @@ static const uint8_t SCK = 18;
 #define TFT_WIDTH 170
 #define TFT_HEIGHT 320
 #define TFT_BACKLIGHT_ON 1
-#define TFT_BL 6
-#define TFT_RST 16
-#define TFT_DC 15
-#define TFT_MISO 8
-#define TFT_MOSI 17
-#define TFT_SCLK 18
-#define TFT_CS 7
+#define TFT_BL 14
+#define TFT_RST 13
+#define TFT_DC 9
+#define TFT_MISO -1
+#define TFT_MOSI 11
+#define TFT_SCLK 12
+#define TFT_CS 10
 #define TOUCH_CS -1 // SDCARD_CS to make sure SDCard works
 #define SMOOTH_FONT 1
-#define SPI_FREQUENCY 20000000
+#define SPI_FREQUENCY 80000000
 #define SPI_READ_FREQUENCY 20000000
 #define SPI_TOUCH_FREQUENCY 2500000
 
@@ -106,6 +106,7 @@ static const uint8_t SCK = 18;
 
 // USE BOOST ENABLE PMIC 5V OUTPUT
 #define USE_BOOST
+
 
 // Mic#
 #define PIN_CLK 1
